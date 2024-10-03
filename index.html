@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-purple-400 min-h-screen flex flex-col justify-between">
+
+    <!-- To-Do Container -->
+    <div class="container mx-auto mt-10 max-w-xl bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-center text-3xl font-bold mb-5 text-gray-800">To-Do List</h1>
+
+        <div class="flex mb-4">
+            <input type="text" id="todo-input" placeholder="Add a new task..." class="flex-grow p-3 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <button id="add-btn" class="bg-blue-500 text-white px-5 rounded-r-lg hover:bg-blue-600 transition">Add</button>
+        </div>
+
+        <!-- Task Table -->
+        <table class="table-auto w-full text-left bg-white rounded-lg shadow-lg">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="p-3">No.</th>
+                    <th class="p-3">Task</th>
+                    <th class="p-3">Action</th>
+                </tr>
+            </thead>
+            <tbody id="todo-table-body">
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
